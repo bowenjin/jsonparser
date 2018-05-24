@@ -11,7 +11,7 @@ parses JSON, returns a Java object parse tree
 
 4. Call the parse method of the Parser object on a File object or a String object 
    - *parser.parse(new java.io.File("path/of/your/json/file"));*
-   - *parser.parse("{\"key1\" : \"value1\", \"key2\": \"value2\"}");*
+   - *parser.parse("{\\"key1\\" : \\"value1\\", \\"key2\\": \\"value2\\"}");*
      - Note: you must escape JSON string literals
 
 5. parser.parse returns root of the parse tree, which is a JsonElement  
