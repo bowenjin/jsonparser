@@ -1,7 +1,7 @@
 # jsonparser
 parses JSON, returns a Java object parse tree
 
-##Instructions:
+## Instructions:
 1. Execute "javac jsonparser/*.java" from root directory of repository
 2. Add the statement "import jsonparser.Parser;" to your Java source file
 3. Create a Parser object
@@ -17,12 +17,12 @@ parses JSON, returns a Java object parse tree
      - JsonNumber
      - JsonBoolean
      - JsonNull
-6. Call getObject() on any of the above classes to get an Object
+6. Call getObject() on any of the above classes to get the underlying Object
 
-7. Here are the underlying types of the Object returned by getObject() method of each class
-   - JsonObject - Map<String, JsonElement>
-   - JsonArray - List<JsonElement>
-   - JsonString - String
-   - JsonNumber - Double
-   - JsonNull - none
-   - JsonBoolean - Boolean
+7. Here are the methods to get the underlying types of each class
+   - JsonObject - *Map<String, JsonElement> getMap()*
+   - JsonArray - *List<JsonElement> getList()*
+   - JsonString - *String getString()*
+   - JsonNumber - *Double getDouble()*
+   - JsonNull - *none*
+   - JsonBoolean - *Boolean getBoolean*

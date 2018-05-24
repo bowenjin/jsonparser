@@ -26,6 +26,15 @@ public class JsonObject extends JsonElement implements JsonContainerElement{
     sb.append("}");
     return sb.toString();
   }
+
+  Map<String, JsonElement> getMap(){
+    return map;
+  }
+
+  JsonElement get(String key){
+    return map.get(key);
+  }
+
   @Override
   public String toString(int spaces){
     return deepToString(spaces);

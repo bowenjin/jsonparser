@@ -1,5 +1,6 @@
 package jsonparser.nodes;
 import java.util.ArrayList;
+import java.util.List;
 public class JsonArray extends JsonElement implements JsonContainerElement{
   ArrayList<JsonElement> elements = new ArrayList<JsonElement>();
   public Object getObject(){
@@ -22,6 +23,14 @@ public class JsonArray extends JsonElement implements JsonContainerElement{
     sb.append("]\n"); 
     return sb.toString();   
   }
+
+  public List<JsonElement> getList(){
+    return elements;
+  }
+  public JsonElement get(int i){
+    return elements.get(i);
+  }
+
   @Override
   public String toString(int spaces){
     return deepToString(spaces);

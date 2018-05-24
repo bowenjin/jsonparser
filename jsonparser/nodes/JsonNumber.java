@@ -7,5 +7,9 @@ public class JsonNumber extends JsonElement{
   public Object getObject(){
     return number;
   }
+
+  public Double getDouble(){
+    return number;
+  }
 }
 

@@ -7,6 +7,11 @@ public class JsonString extends JsonElement{
   public Object getObject(){
     return string;
   }
+
+  public String getString(){
+    return string;
+  } 
+
   @Override
   public String toString(int spaces){
     return createSpaces(spaces) + '"' + string + '"';

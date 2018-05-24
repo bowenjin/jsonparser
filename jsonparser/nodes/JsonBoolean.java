@@ -7,5 +7,9 @@ public class JsonBoolean extends JsonElement{
   public Object getObject(){
     return bool;
   }
+
+  Boolean getBoolean(){
+    return bool;
+  }
 }
 
